@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/yandex-meetings/static/css/main.01259b64.chunk.css",
+    "main.js": "/yandex-meetings/static/js/main.dca6dcda.chunk.js",
+    "main.js.map": "/yandex-meetings/static/js/main.dca6dcda.chunk.js.map",
+    "runtime-main.js": "/yandex-meetings/static/js/runtime-main.bf128ae1.js",
+    "runtime-main.js.map": "/yandex-meetings/static/js/runtime-main.bf128ae1.js.map",
+    "static/js/2.3c3888ed.chunk.js": "/yandex-meetings/static/js/2.3c3888ed.chunk.js",
+    "static/js/2.3c3888ed.chunk.js.map": "/yandex-meetings/static/js/2.3c3888ed.chunk.js.map",
+    "index.html": "/yandex-meetings/index.html",
+    "precache-manifest.270c4f993575520e5c3020d428627dda.js": "/yandex-meetings/precache-manifest.270c4f993575520e5c3020d428627dda.js",
+    "service-worker.js": "/yandex-meetings/service-worker.js",
+    "static/css/main.01259b64.chunk.css.map": "/yandex-meetings/static/css/main.01259b64.chunk.css.map",
+    "static/media/Meetings.css": "/yandex-meetings/static/media/open.62240c93.svg",
+    "static/media/index.css": "/yandex-meetings/static/media/helveticaneue.8dc42d2d.woff2",
+    "static/media/logo.svg": "/yandex-meetings/static/media/logo.774e34d9.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bf128ae1.js",
+    "static/js/2.3c3888ed.chunk.js",
+    "static/css/main.01259b64.chunk.css",
+    "static/js/main.dca6dcda.chunk.js"
+  ]
+}
