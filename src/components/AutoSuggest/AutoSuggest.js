@@ -48,7 +48,7 @@ export const AutoSuggest = ({ onChange }) => {
             <Input
                 label='Участники'
                 type='text'
-                placeholder='введите имя'
+                placeholder='Введите имя'
                 width="100%"
                 value={query}
                 onChange={handleChange}

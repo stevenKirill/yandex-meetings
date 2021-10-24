@@ -180,6 +180,6 @@ text-transform: uppercase;
   left: 245px;
   content: '';
   display: block;
-  background: #ee0;
+  background: rgb(131, 180, 226);
   z-index: -1;
 }

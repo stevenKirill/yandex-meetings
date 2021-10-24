@@ -6,13 +6,14 @@ export const Rooms = ({ onChange }) => {
     const [roomId, setRoomId] = useState(null);
     function handleChange(event) {
         setRoomId(Number(event.currentTarget.value));
-    }
+    };
+
     function handleClick() {
         setRoomId(null);
-    }
+    };
 
     useEffect(() => {
-        onChange(roomId)
+        onChange(roomId);
     },[roomId]);
 
     if (roomId) {
@@ -30,19 +31,20 @@ export const Rooms = ({ onChange }) => {
     }
 
     return (
-        <div className="rooms">
-            <h1 className="rooms__title">Рекомендованные переговорки</h1>
-            {rooms.map((room,idx) => {
-                return (
-                    <label className="rooms__item" key={idx}>
-                        <input type="radio" value={room.id} name="room" className="rooms__input" onChange={handleChange}/>
-                        <span className="rooms__time">16:00 -- 16:30</span>
-                        <span className="rooms__name">{room.name}</span>
-                        <span className='rooms__floor'>{room.floor} этаж</span>
-                    </label>
-                )
-            })}
-
+        <div>
+            <div className="rooms__title">Рекомендованные переговорки</div>
+            <div className="rooms">
+                    {rooms.map((room,idx) => {
+                        return (
+                            <label className="rooms__item" key={idx}>
+                                <input type="radio" value={room.id} name="room" className="rooms__input" onChange={handleChange}/>
+                                <span className="rooms__time">16:00 -- 16:30</span>
+                                <span className="rooms__name">{room.name}</span>
+                                <span className='rooms__floor'>{room.floor} этаж</span>
+                            </label>
+                        )
+                    })}
+            </div>
         </div>
     );
-}
+};

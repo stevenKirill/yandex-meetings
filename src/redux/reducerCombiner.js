@@ -1,3 +1,5 @@
+
+/** Combine reducers. */
 const combineReducers = (reducers) => {
     return (state = {}, action) => {
         return Object.keys(reducers).reduce((nextState,key) => {
@@ -5,4 +7,4 @@ const combineReducers = (reducers) => {
             return nextState;
         },{})
     }
-}
+};

@@ -14,23 +14,24 @@ const Meetings_ = ({ handleAddEvent }) => {
     return function(value) {
       setFormValues(prev => ({ ...prev, [name]: value }));
     };
-  }
+  };
 
   function handleSumbit(event) {
     event.preventDefault();
     handleAddEvent(formValues);
-  }
+    setVisible(false);
+  };
 
   function handleVisible() {
     setVisible(!visible);
-  }
+  };
 
   return (
     <form className="form" onSubmit={handleSumbit}>
       <header className="form__header">
         <h1 className="form__title">Новая встреча</h1>
         <button
-          className="form__closeButton"
+          className={`${visible ? "form__closeButton" : "form__openButton"}`}
           type="button"
           onClick={handleVisible}
         >
@@ -40,19 +41,27 @@ const Meetings_ = ({ handleAddEvent }) => {
       {visible && (
         <div>
           <main className="form__content">
-            <Input
-              label="Тема"
-              type="text"
-              placeholder="О чем будем говорить?"
-              onChange={event => setValue("name")(event.target.value)}
-              width="420px"
-            />
-            <DateRange onChange={setValue("daterange")} />
-            <AutoSuggest onChange={setValue("persons")} />
-            <Rooms onChange={setValue("roomId")} />
+            <div className="form__content-first">
+              <Input
+                label="Тема"
+                type="text"
+                placeholder="О чем будем говорить?"
+                onChange={event => setValue("name")(event.target.value)}
+                width="420px"
+              />
+              <DateRange onChange={setValue("daterange")} />
+            </div>
+            <div className="form__content-second">
+              <AutoSuggest onChange={setValue("persons")} />
+              <Rooms onChange={setValue("roomId")} />
+            </div>
           </main>
+          <hr/>
           <footer className="form__footer">
-            <Button design="default" type="button">
+            <Button design="default" type="button" onClick={() => {
+              console.log('hahah')
+              setVisible(false)
+            }}>
               Отмена
             </Button>
             <Button design="primary" type="submit" id="button_ml">
@@ -71,8 +80,9 @@ const addEvent = event => ({
 });
 
 const mapDispatchToProps = dispatch => {
+  console.log(dispatch,'=> dis')
   return {
-    handleAddEvent: data => dispatch(addEvent(data))
+    handleAddEvent: data => dispatch.call(this,addEvent(data))
   };
 };
 

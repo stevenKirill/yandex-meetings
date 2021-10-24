@@ -1,15 +1,21 @@
 .rooms {
     width: 420px;
-    margin-top: 24px;
     height: 250px;
     overflow: scroll;
     overflow-x: hidden;
 }
+.rooms::-webkit-scrollbar {
+    width: 8px;
+}
+.rooms::-webkit-scrollbar-thumb {
+    width: 5px;
+    margin: 0 4px;
+    background: #D5DFE9;
+    border-radius: 50px;
+}
 .rooms__title {
-    font-size: 13px;
-    position: sticky;
-    top: 0;
-    margin-bottom: 10px;
+    margin-top: 20px;
+    text-align: center;
 }
 .rooms__item {
     cursor: pointer;
@@ -88,4 +94,8 @@
 .rooms__button:hover::after,
 .rooms__button:hover::before {
     transform: rotate(0deg);
+}
+
+.rooms_list {
+    margin-top: 10px;
 }

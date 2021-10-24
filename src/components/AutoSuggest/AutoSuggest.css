@@ -1,12 +1,10 @@
 .autosuggest {
-  margin-top: 24px;
   width: 420px;
-  position: relative;
+  margin-top: 20px;
 }
 .autosuggest__list {
-    position: absolute;
     width: 100%;
-    max-height: 136px;
+    max-height: 200px;
     overflow-y: scroll;
     cursor: pointer;
     box-shadow: 0 1px 10px 0 rgba(0,44,92,0.28);
@@ -58,14 +56,14 @@
 }
 
 .autosuggest__list::-webkit-scrollbar {
-  width: 16px;
+  width: 8px;
 }
 
 .autosuggest__list::-webkit-scrollbar-thumb {
-  width: 8px;
+  width: 5px;
   margin: 0 4px;
   background: #D5DFE9;
-  border-radius: 100px;
+  border-radius: 50px;
 }
 
 .selectedPerson {
