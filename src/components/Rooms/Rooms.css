@@ -1,0 +1,91 @@
+.rooms {
+    width: 420px;
+    margin-top: 24px;
+    height: 250px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.rooms__title {
+    font-size: 13px;
+    position: sticky;
+    top: 0;
+    margin-bottom: 10px;
+}
+.rooms__item {
+    cursor: pointer;
+    width: 100%;
+    display: block;
+    background-color: #E9ECEF;
+    margin-top: 5px;
+    border-radius: 4px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    font-size: 13px;
+}
+.rooms__name {
+    margin-left: 16px;
+}
+.rooms__input {
+    display: none;
+}
+.rooms__floor::before {
+    content: '';
+    margin: 3px;
+    display: inline-block;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: black;
+}
+.rooms__time {
+    font-weight: bold;
+}
+.rooms__button {
+    position: relative;
+    width: 100%;
+    padding-top:10px;
+    padding-bottom:10px;
+    text-align: left;
+    padding-left: 10px;
+    border-radius: 4px;
+    color: white;
+    border: none;
+    background-color: #007DFF;
+}
+.rooms__button:hover {
+    background-color: #0059FF;
+    cursor: pointer;
+}
+.rooms__button:active {
+    background-color: #0B00FF;
+}
+.rooms__button::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 13px;
+    height: 2px;
+    top: 14px;
+    right: 9.1px;
+    transform: rotate(-45deg);
+    background-color: white;
+    transition: transform 0.3s ease-in-out;
+}
+.rooms__button::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 13px;
+    height: 2px;
+    top: 14px;
+    right: 9.1px;
+    transform: rotate(45deg);
+    background-color: white;
+    transition: transform 0.3s ease-in-out;
+}
+
+.rooms__button:hover::after,
+.rooms__button:hover::before {
+    transform: rotate(0deg);
+}

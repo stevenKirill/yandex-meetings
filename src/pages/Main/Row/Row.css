@@ -1,0 +1,49 @@
+
+.row {
+    width: 100%;
+    display: flex;
+    position: relative;
+    /* outline: 1px solid red; */
+    margin-bottom: 20px;
+}
+/* .row:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 16px;
+    position: absolute;
+    left: 290px;
+    right: 100px;
+    top: -16px;
+    background-color: red;
+}  */
+.row__timeline {
+    flex-grow: 1;
+    position: relative;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 10px;
+    margin-right: 15px;
+    background: #D5DFE9;
+}
+.row__room {
+    width: 245px;
+    padding-left: 25px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.row__cell {
+    background-color: #99A9B9;
+    position: absolute;
+}
+.row__roomName {
+    font-size: 15px;
+    color: #858e98;
+    line-height: 1;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+.row__roomCapacity {
+    font-size: 13px;
+}

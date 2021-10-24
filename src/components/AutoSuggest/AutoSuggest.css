@@ -1,0 +1,125 @@
+.autosuggest {
+  margin-top: 24px;
+  width: 420px;
+  position: relative;
+}
+.autosuggest__list {
+    position: absolute;
+    width: 100%;
+    max-height: 136px;
+    overflow-y: scroll;
+    cursor: pointer;
+    box-shadow: 0 1px 10px 0 rgba(0,44,92,0.28);
+    border-radius: 4px;
+    z-index: 100;
+    background: white;
+}
+
+.autosuggest__list-inner {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.person {
+  padding: 5px 16px;
+  font-size: 13px;
+  line-height: 24px;
+  display: flex;
+}
+
+.person:hover {
+  font-weight: 700;
+}
+
+.person__avatar {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+.person__name {
+    margin-left: 8px;
+}
+
+.person__floor {
+    color: #cccccc;
+    margin-left: 8px;
+}
+.person__floor::before {
+  content:'';
+  display: inline-block;
+  margin-bottom: 4px;
+  margin-right: 4px;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background-color: #000000;
+}
+
+.autosuggest__list::-webkit-scrollbar {
+  width: 16px;
+}
+
+.autosuggest__list::-webkit-scrollbar-thumb {
+  width: 8px;
+  margin: 0 4px;
+  background: #D5DFE9;
+  border-radius: 100px;
+}
+
+.selectedPerson {
+  padding: 0;
+  width: 420px;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+.selectedPerson__item {
+  width: 170px;
+  height: 24px;
+  background-color:  #E9ECEF;
+  border-radius: 16px;
+  font-family: HelveticaNeue;
+  font-size: 13px;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: 17px;
+  margin-top: 8px;
+  margin-left: 8px;
+  position: relative;
+  cursor: pointer;
+}
+.selectedPerson__item::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 11px;
+  height: 2px;
+  top: 12px;
+  right: 9.1px;
+  transform: rotate(-45deg);
+  background-color: #AFB4B8;
+  transition: transform 0.3s ease-in-out;
+}
+.selectedPerson__item::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 11px;
+  height: 2px;
+  top: 12px;
+  right: 9.1px;
+  transform: rotate(45deg);
+  background-color: #AFB4B8;
+  transition: transform 0.3s ease-in-out;
+}
+.selectedPerson__name {
+  position: absolute;
+  margin: 3px 0 4px 8px;
+}
+.selectedPerson__avatar {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}

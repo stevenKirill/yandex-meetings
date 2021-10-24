@@ -1,0 +1,31 @@
+.body {
+    margin: 0;
+    padding:0;
+}
+
+/* https://webfonts.pro/templates/fonts/download/HelveticaNeueCyr/HelveticaNeueCyr-Roman.woff */
+
+
+
+/* символ звездочка это любой селектор */
+/* https://www.youtube.com/watch?v=6Du7qxtEmgE про селекторы короткое =>>>> done */
+/* https://www.youtube.com/watch?v=rd4ZHbIp6ZE про кнопки, доступность длинное */
+
+/* https://exploringjs.com/impatient-js/toc.html  5, 10*/
+/* http://learn.javascript.ru/event-loop про микротаски и макротаски * =>>> done *?
+/* Рефакторинг кода на Javascript — Мартин Фаулер */
+
+/* https://www.amazon.com/CSS-Secrets-Solutions-Everyday-Problems/dp/1449372635 */
+
+
+/* CORS */
+
+/* http://learn.javascript.ru/fetch-crossorigin */
+/* https://vimeo.com/338392173/b98c5fca49 */
+/* https://www.youtube.com/watch?v=QBv4EbpA1LA&list=PLr1siHsWN79BpMXpZv0rEo0b8Wqgf9SUv&index=14&t=0s (примерно первый час до перерыва) */
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box; 
+}

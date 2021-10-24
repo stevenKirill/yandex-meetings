@@ -1,0 +1,14 @@
+.button {
+    background-color: #007DFF;
+    border-radius: 4px;
+    padding: 0 16px;
+    height: 36px;
+    line-height:36px;
+    border: none;
+    color: white;
+    font-size: 13px; 
+    cursor: pointer;
+}
+#button_ml {
+    margin-left: 17px;
+}
