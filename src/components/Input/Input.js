@@ -3,7 +3,16 @@ import './Input.css'
 
 const cn = (...args) => args.filter(s => typeof s === 'string').join(' ');
 
-export function Input({label,type,onChange,onBlur, onFocus, placeholder,width, additionalClassName}) {
+export function Input({ 
+    label,
+    type,
+    onChange,
+    onBlur,
+    onFocus,
+    placeholder,
+    width,
+    additionalClassName
+}) {
     const style = {
         width
     }

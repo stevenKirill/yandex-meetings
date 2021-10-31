@@ -17,7 +17,6 @@ class Redux {
         }
     };
 
-    // TODO ошибка с this при вызове dispatch из компонентов.
     dispatch(action) {
         this._state = this.reducer(this._state, action);
         this._listeners.forEach(listener => listener());
@@ -29,5 +28,6 @@ class Redux {
 };
 
 export const createStore = (reducer, initialState) => {
-    return new Redux(reducer, initialState);
+    const reduxInstance = new Redux(reducer, initialState);
+    return reduxInstance
 };
