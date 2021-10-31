@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "621b0b7156dd775807a9c99e53044990",
+    "revision": "0f4a847b57e1a635dcd27a09abf3ed0b",
     "url": "/yandex-meetings/index.html"
   },
   {
-    "revision": "831225979014b44558de",
+    "revision": "bb73e4941a3f2a363558",
     "url": "/yandex-meetings/static/css/main.01259b64.chunk.css"
   },
   {
-    "revision": "c4f2c24acffcce54e716",
-    "url": "/yandex-meetings/static/js/2.3c3888ed.chunk.js"
+    "revision": "f6b6ab51f5e09d30dc3c",
+    "url": "/yandex-meetings/static/js/2.d862c63e.chunk.js"
   },
   {
-    "revision": "831225979014b44558de",
-    "url": "/yandex-meetings/static/js/main.dca6dcda.chunk.js"
+    "revision": "bb73e4941a3f2a363558",
+    "url": "/yandex-meetings/static/js/main.c8a43e73.chunk.js"
   },
   {
     "revision": "e0bc5ddcf5822779231a",
